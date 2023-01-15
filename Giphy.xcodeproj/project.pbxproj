@@ -30,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD836E529744A1B001A8594 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 		B86EC74C294E75280050617B /* Giphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86EC74F294E75280050617B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86EC751294E75280050617B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +66,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AD836E3297449E8001A8594 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AD836E4297449F3001A8594 /* Fonts */,
+				B86EC758294E75290050617B /* Assets.xcassets */,
+				B86EC75A294E75290050617B /* LaunchScreen.storyboard */,
+				B86EC75D294E75290050617B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AD836E4297449F3001A8594 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0AD836E529744A1B001A8594 /* YS Display-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B86EC743294E75280050617B = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +108,9 @@
 				B8FC1960294E794500DF78F1 /* Models */,
 				B8FC1964294E794500DF78F1 /* Presentation */,
 				B8FC1969294E794500DF78F1 /* Services */,
+				0AD836E3297449E8001A8594 /* Resources */,
 				B86EC74F294E75280050617B /* AppDelegate.swift */,
 				B86EC751294E75280050617B /* SceneDelegate.swift */,
-				B86EC755294E75280050617B /* Main.storyboard */,
-				B86EC758294E75290050617B /* Assets.xcassets */,
-				B86EC75A294E75290050617B /* LaunchScreen.storyboard */,
-				B86EC75D294E75290050617B /* Info.plist */,
 			);
 			path = Giphy;
 			sourceTree = "<group>";
@@ -111,6 +128,7 @@
 		B8FC1964294E794500DF78F1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B86EC755294E75280050617B /* Main.storyboard */,
 				B8FC1965294E794500DF78F1 /* GiphyViewController.swift */,
 				B8FC1966294E794500DF78F1 /* GiphyPresenterProtocol.swift */,
 				B8FC1967294E794500DF78F1 /* GiphyViewControllerProtocol.swift */,

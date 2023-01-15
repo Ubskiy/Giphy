@@ -3,9 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>Разрешить приложению доступ к галереии?</string>
+    <string>Разрешить приложению доступ к галереи?</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+        <key>UIAppFonts</key>
+        <array>
+            <string>YS Display-Medium</string>
+        </array>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
