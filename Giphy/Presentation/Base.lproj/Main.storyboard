@@ -67,6 +67,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNoButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdX-yu-uLD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTf-L3-5hp" userLabel="Like Button">
                                                 <rect key="frame" x="182" y="0.0" width="171" height="60"/>
@@ -79,6 +82,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onYesButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSy-5j-ZkJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -100,7 +106,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="counterLabel" destination="Rpv-vy-zvS" id="Omz-Mf-Qa7"/>
                         <outlet property="giphyActivityIndicatorView" destination="ffa-a1-m1O" id="cra-TY-q2f"/>
+                        <outlet property="giphyImageView" destination="YJ1-ZX-HdV" id="mxM-bw-K2t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
