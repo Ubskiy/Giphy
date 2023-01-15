@@ -8,13 +8,8 @@ final class GiphyViewController: UIViewController {
     // Переменная Int -- Количество понравившихся гифок
     // Например likedGifCounter -- счетчик любимых гифок
 
-    // @IBOutlet UILabel для счетчика гифок, например 1/10
-    // Например -- @IBOutlet weak var counterLabel: UILabel!
-
-    // @IBOutlet UIImageView для Гифки
-    // Например -- @IBOutlet weak var giphyImageView: UIImageView!
-
-    // @IBOutlet UIActivityIndicatorView загрузки гифки, так как она может загрухаться долго
+    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var giphyImageView: UIImageView!
     @IBOutlet weak var giphyActivityIndicatorView: UIActivityIndicatorView!
 
     // Нажатие на кнопку лайка
@@ -54,7 +49,7 @@ final class GiphyViewController: UIViewController {
         return presenter
     }()
 
-    // MARK: - Жизенный цикл экрана
+    // MARK: - Жизненный цикл экрана
 
     override func viewDidLoad() {
         super.viewDidLoad()

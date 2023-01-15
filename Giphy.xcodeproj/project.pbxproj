@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A51325729745345000A2F39 /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AD836E529744A1B001A8594 /* YS Display-Medium.ttf */; };
 		B86EC750294E75280050617B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC74F294E75280050617B /* AppDelegate.swift */; };
 		B86EC752294E75280050617B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC751294E75280050617B /* SceneDelegate.swift */; };
 		B86EC757294E75280050617B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86EC755294E75280050617B /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD836E529744A1B001A8594 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 		B86EC74C294E75280050617B /* Giphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86EC74F294E75280050617B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86EC751294E75280050617B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AD836E3297449E8001A8594 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AD836E4297449F3001A8594 /* Fonts */,
+				B86EC758294E75290050617B /* Assets.xcassets */,
+				B86EC75A294E75290050617B /* LaunchScreen.storyboard */,
+				B86EC75D294E75290050617B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AD836E4297449F3001A8594 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0AD836E529744A1B001A8594 /* YS Display-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B86EC743294E75280050617B = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +109,9 @@
 				B8FC1960294E794500DF78F1 /* Models */,
 				B8FC1964294E794500DF78F1 /* Presentation */,
 				B8FC1969294E794500DF78F1 /* Services */,
+				0AD836E3297449E8001A8594 /* Resources */,
 				B86EC74F294E75280050617B /* AppDelegate.swift */,
 				B86EC751294E75280050617B /* SceneDelegate.swift */,
-				B86EC755294E75280050617B /* Main.storyboard */,
-				B86EC758294E75290050617B /* Assets.xcassets */,
-				B86EC75A294E75290050617B /* LaunchScreen.storyboard */,
-				B86EC75D294E75290050617B /* Info.plist */,
 			);
 			path = Giphy;
 			sourceTree = "<group>";
@@ -111,6 +129,7 @@
 		B8FC1964294E794500DF78F1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B86EC755294E75280050617B /* Main.storyboard */,
 				B8FC1965294E794500DF78F1 /* GiphyViewController.swift */,
 				B8FC1966294E794500DF78F1 /* GiphyPresenterProtocol.swift */,
 				B8FC1967294E794500DF78F1 /* GiphyViewControllerProtocol.swift */,
@@ -224,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B86EC75C294E75290050617B /* LaunchScreen.storyboard in Resources */,
+				0A51325729745345000A2F39 /* YS Display-Medium.ttf in Resources */,
 				B86EC759294E75290050617B /* Assets.xcassets in Resources */,
 				B86EC757294E75280050617B /* Main.storyboard in Resources */,
 			);
@@ -399,24 +419,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F62XB9J24B;
+				DEVELOPMENT_TEAM = VEWJJ8ZGBW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Giphy/Info.plist;
+				INFOPLIST_FILE = Giphy/Resources/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Разрешить приложению доступ к галереи?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Yandex.Giphy.Giphy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yandex.Giphy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,24 +452,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F62XB9J24B;
+				DEVELOPMENT_TEAM = VEWJJ8ZGBW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Giphy/Info.plist;
+				INFOPLIST_FILE = Giphy/Resources/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Разрешить приложению доступ к галереи?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Yandex.Giphy.Giphy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yandex.Giphy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
