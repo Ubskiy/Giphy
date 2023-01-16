@@ -107,8 +107,10 @@
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="Rpv-vy-zvS" id="Omz-Mf-Qa7"/>
+                        <outlet property="dislikeButtonLabel" destination="eVP-LV-iZc" id="lcC-0I-B2r"/>
                         <outlet property="giphyActivityIndicatorView" destination="ffa-a1-m1O" id="cra-TY-q2f"/>
                         <outlet property="giphyImageView" destination="YJ1-ZX-HdV" id="mxM-bw-K2t"/>
+                        <outlet property="likeButtonLabel" destination="sTf-L3-5hp" id="eCZ-Hx-OtK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
