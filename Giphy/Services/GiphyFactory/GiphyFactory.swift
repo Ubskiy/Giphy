@@ -29,14 +29,14 @@ final class GiphyFactory: GiphyFactoryProtocol {
                 // Успех
             case .success(let apiModel):
                 if let model = self?.mapper.map(model: apiModel) {
-                    self?.delegate?.didRecieveNextGiphy(model)
+                    self?.delegate?.didReceiveNextGiphy(model)
                 } else {
-                    self?.delegate?.didReciveError(.emptyData)
+                    self?.delegate?.didReceiveError(.emptyData)
                 }
 
                 // Ошибка
             case .failure(let error):
-                self?.delegate?.didReciveError(error)
+                self?.delegate?.didReceiveError(error)
             }
         }
     }
