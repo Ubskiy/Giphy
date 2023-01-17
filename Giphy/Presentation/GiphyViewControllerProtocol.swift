@@ -2,6 +2,7 @@ import UIKit
 
 // Протокол для общения между Presenter и View слоями
 protocol GiphyViewControllerProtocol: AnyObject {
+    var giphyImageView: UIImageView! {get}
     // Отображение ошибки при загрузке гифки
     func showError()
 
@@ -13,4 +14,11 @@ protocol GiphyViewControllerProtocol: AnyObject {
 
     // Закончить показывать индикатор загрузки гифки
     func hideHoaler()
+    
+    func highlightImageBorder(isCorrectAnswer: Bool)
+    
+    func interactionEnable()
+    
+    func interactionDisable()
+    
 }
