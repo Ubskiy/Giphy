@@ -49,7 +49,6 @@ final class GiphyViewController: UIViewController {
         func restart() {
             interactionEnable()
             presenter.restart()
-            updateCounterLabel()
             presenter.fetchNextGiphy()//загружаем гифку
         }
     }
