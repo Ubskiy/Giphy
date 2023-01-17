@@ -10,4 +10,18 @@ protocol GiphyPresenterProtocol: AnyObject {
 
     // Сохранение гифки в файлы
     func saveGif(_ image: UIImage?)
+    
+    func yesButtonAction()
+    
+    func noButtonAction()
+    
+    func switchToNextIndex()
+    
+    func returnCurrentIndex() -> Int
+    
+    func returnGifAmount() -> Int
+    
+    func returnLikedGifAmount() -> Int
+    
+    func restart()
 }
